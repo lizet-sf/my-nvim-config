@@ -4,6 +4,7 @@ call plug#begin()
 Plug 'altercation/vim-colors-solarized'
 Plug 'joshdick/onedark.vim'
 Plug 'sainnhe/everforest'
+Plug 'EdenEast/nightfox.nvim'
 Plug 'ryanoasis/vim-devicons'			
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'preservim/nerdtree'
@@ -42,7 +43,7 @@ set encoding=UTF-8
 set termguicolors
 set guifont=DroidSansMono\ Nerd\ Font\ 11
 set background=dark
-colorscheme onedark
+colorscheme nightfox
 syntax on
 
 ""let g:everforest_background = 'soft'

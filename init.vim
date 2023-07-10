@@ -47,7 +47,7 @@ colorscheme nightfox
 syntax on
 
 ""let g:everforest_background = 'soft'
-let g:conjure#client#clojure#nrepl#test#current_form_names = ['deftest', 'defflow', 'defflow-new-system!']
+let g:conjure#client#clojure#nrepl#test#current_form_names = ['deftest', 'defflow', 'defflow-new-system!', 'defspec']
 let g:conjure#log#botright = 'true'
 
 "---- Disable arrows 

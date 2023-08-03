@@ -30,6 +30,7 @@ return {
     { "<leader>gst", "<cmd>Telescope git_status<cr>", desc = "Git Status", mode = "n", noremap = true, silent = true },
     { "<leader>gcm", "<cmd>Telescope git_commits<cr>", desc = "Git Commits", mode = "n", noremap = true, silent = true },
     { "<leader>gff", "<cmd>Telescope git_files<cr>", desc = "Git Files", mode = "n", noremap = true, silent = true },
+    { "<leader>sS", "<lsp_dynamic_workspace_symbols>", desc = "Goto Symbol", mode = "n", noremap = true, silent = true},
   },
 },
 {

@@ -16,8 +16,8 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup("plugins", opts)
 
 
-vim.opt.number = true 
-vim.opt.relativenumber = true 
+vim.opt.number = true
+vim.opt.relativenumber = true
 vim.opt.encoding="UTF-8"
 vim.opt.termguicolors = true
 vim.opt.guifont = {"DroidSansMono Nerd Font", "h11"}

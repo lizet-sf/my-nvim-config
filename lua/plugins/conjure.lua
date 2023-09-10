@@ -2,8 +2,16 @@ return {
 {
   'olical/conjure',
   config = function ()
-    vim.g['conjure#client#clojure#nrepl#test#current_form_names'] = {'deftest','defflow','defflow-new-system!','defflow-i18n','defspec','defflow-i18n-without-loopback','defflow-without-fn-validation', 'defflow-as-of'}
-    vim.g['conjure#log#botright'] = true 
+    vim.g['conjure#client#clojure#nrepl#test#current_form_names'] =
+    	{'deftest',
+	'defflow',
+	'defflow-new-system!',
+	'defflow-i18n',
+	'defspec',
+	'defflow-i18n-without-loopback',
+	'defflow-without-fn-validation',
+	'defflow-as-of'}
+    vim.g['conjure#log#botright'] = true
     vim.g['conjure#log#strip_ansi_escape_sequences_line_limit'] = 0
     local result = vim.api.nvim_exec([[
       let s:baleia = luaeval("require('baleia').setup { line_starts_at = 3 }")
@@ -15,9 +23,12 @@ return {
 
   end,
 },
+{'m00qek/baleia.nvim', tag = "v1.3.0"},
+{
+  'guns/vim-clojure-static',
+},
 {
   'guns/vim-sexp',
   'tpope/vim-sexp-mappings-for-regular-people'
 },
-{'m00qek/baleia.nvim'},
 }

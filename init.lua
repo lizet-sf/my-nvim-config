@@ -22,7 +22,8 @@ vim.opt.encoding="UTF-8"
 vim.opt.termguicolors = true
 vim.opt.guifont = {"DroidSansMono Nerd Font", "h11"}
 vim.opt.background = "dark"
-
+vim.cmd("syntax on")
+vim.cmd("filetype plugin indent on")
 --Disable arrows
 vim.keymap.set("n", "<Up>", "<Nop>", {noremap = true})
 vim.keymap.set("n", "<Down>", "<Nop>", {noremap = true})

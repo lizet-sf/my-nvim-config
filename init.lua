@@ -22,14 +22,15 @@ vim.opt.encoding="UTF-8"
 vim.opt.termguicolors = true
 vim.opt.guifont = {"DroidSansMono Nerd Font", "h11"}
 vim.opt.background = "dark"
-vim.cmd("syntax on")
-vim.cmd("filetype plugin indent on")
+vim.cmd([[colorscheme nordfox]])
+
 --Disable arrows
 vim.keymap.set("n", "<Up>", "<Nop>", {noremap = true})
 vim.keymap.set("n", "<Down>", "<Nop>", {noremap = true})
 vim.keymap.set("n", "<Left>", "<Nop>", {noremap = true})
 vim.keymap.set("n", "<Right>", "<Nop>", {noremap = true})
 
-
-
+-- Workaround to avoid LSP repalcing Treesitter color highlight
+-- See: https://github.com/NvChad/NvChad/issues/1907#issuecomment-1501275281
+vim.highlight.priorities.semantic_tokens = 95
 

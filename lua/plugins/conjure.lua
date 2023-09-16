@@ -25,9 +25,6 @@ return {
 },
 {'m00qek/baleia.nvim', tag = "v1.3.0"},
 {
-  'guns/vim-clojure-static',
-},
-{
   'guns/vim-sexp',
   'tpope/vim-sexp-mappings-for-regular-people'
 },

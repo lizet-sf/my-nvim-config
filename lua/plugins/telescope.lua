@@ -1,24 +1,5 @@
 return {
 {
-  'nvim-treesitter/nvim-treesitter', build=':TSUpdate',
-  opts = {
-    ensure_installed = {
-      "bash",
-      "json",
-      "lua",
-      "luadoc",
-      "luap",
-      "markdown",
-      "markdown_inline",
-      "vim",
-      "vimdoc",
-      "yaml",
-      "clojure",
-      "graphql",
-    },
-  },
-},
-{
   'nvim-telescope/telescope.nvim', tag = "0.1.2",
   dependencies = {'nvim-lua/plenary.nvim'},
   keys = {

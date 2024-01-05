@@ -1,3 +1,15 @@
+Prerequisites
+For treesitter
+- gh
+brew install gh
+
+For telescope:
+-ripgrep
+brew install ripgrep
+-fd
+brew install fd
+
+
 On a clean installation
 md ~/.config/nvim (if not created yet)
 cd ~/.config/nvim
